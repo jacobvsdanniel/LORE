@@ -1,0 +1,24 @@
+Article:
+[title] Martin Likes Fish
+[text] Martin is an Irish man. He loves sports. Martin also loves eating fish. One day, he has a dream. The dream is about fishing. However, Martin has a strange phobia: large fish scare him. By the way, he has a pet fish. Martin and his pet fish are good friends with each other. Martin's pet fish loves swimming. Martin regularly kills other aquatic creatures for the survival of his pet fish.
+
+A list of bad relational triples that are not between "Martin" and "fish":
+- "Martin", "is", "an Irish man"
+- "Martin", "loves", "sports"
+- "Martin", "has", "a strange phobia"
+- "Martin and his pet fish", "are", "good friends to each other"
+- "Martin's pet fish", "loves", "swimming"
+
+A list of good relational triples between "Martin" and "fish":
+- "Martin", "likes", "fish"
+- "Martin", "loves", "eating fish"
+- "Martin", "dreamed about", "fishing"
+- "Martin", "scared of", "large fish"
+- "Martin", "has", "a pet fish"
+
+Article:
+[title] yoloTITLEyolo
+[text] yoloTEXTyolo
+
+A list of good relational triples between "yoloGENEyolo" and "yoloDISEASEyolo":
+- 
