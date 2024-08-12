@@ -6,7 +6,7 @@ Source code authors:
 
 ## Introduction
 
-This repo hosts the source codes for LORE (LLM-based Open Relation Extraction and Embedding). We applied LORE to PubMed abstracts for large-scale understanding of disease-gene relationships and created the PMKB-CV knowledge graph. PMKB-CV contains 2K diseases, 600K disease-gene pairs, 11M disease-gene relations, embeddings, and predicted pathogenicity scores. This resource covers 200x more disease-gene pairs than ClinVar, and the predicted pathogenicity scores achieve an 80% Mean Average Precision (MAP) in ranking pathogenic genes for diseases.
+This repo hosts the source codes for **LORE (LLM-based Open Relation Extraction and Embedding)**. We applied LORE to PubMed abstracts for large-scale understanding of disease-gene relationships and created the PMKB-CV knowledge graph. PMKB-CV contains 2K diseases, 600K disease-gene pairs, 11M disease-gene relations, embeddings, and predicted pathogenicity scores. This resource covers 200x more disease-gene pairs than ClinVar, and the predicted pathogenicity scores achieve an 80% Mean Average Precision (MAP) in ranking pathogenic genes for diseases.
 
 **For more details, see our paper:**
 
