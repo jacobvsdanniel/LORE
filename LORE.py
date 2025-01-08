@@ -309,6 +309,7 @@ async def run_ore_extraction_deepinfra():
 
             if prompt_id in completed_prompt_id_set:
                 logger.info(f"skip: [#{prompt_id}]")
+                continue
 
             # create task datum
             datum = json.loads(line)
@@ -512,6 +513,7 @@ async def run_ore_extraction_openai():
 
             if prompt_id in completed_prompt_id_set:
                 logger.info(f"skip: [#{prompt_id}]")
+                continue
 
             # create task datum
             datum = json.loads(line)
