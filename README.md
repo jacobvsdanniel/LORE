@@ -1,17 +1,160 @@
 # LORE
-**A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale**
+
+**[A Literature Semantics Framework with LLMs](https://doi.org/10.1101/2024.08.10.24311801) to build knowledge graphs, embeddings, and association predictors**
+
+**[The LORE PMKB-CV Dataset](https://doi.org/10.5281/zenodo.14607638) contains PubMed disease-gene knowledge graphs, embeddings, and predicted pathogenicity scores**
 
 Source code authors:
-- Li Peng-Hsuan (李朋軒) @ ailabs.tw (jacobvsdanniel [at] gmail.com)
+- Li Peng-Hsuan (李朋軒) (jacobvsdanniel [at] gmail.com) @ Taiwan AI Labs
 
-## Introduction
+Researchers:
+- Li Peng-Hsuan (李朋軒) (jacobvsdanniel [at] gmail.com) @ Taiwan AI Labs
+- Sun Yih-Yun (孫懿筠) @ Taiwan AI Labs
+- Juan Hsueh-Fen (阮雪芬) (yukijuan [at] gmail.com) @ National Taiwan University
+- Chen Chien-Yu (陳倩瑜) (chienyuchen [at] g.ntu.edu.tw) @ National Taiwan University
+- Tsai Huai-Kuang (蔡懷寬) (hktsai616 [at] gmail.com) @ Academia Sinica
+- Huang Jia-Hsin (黃佳欣) (jiahsin.huang [at] ailabs.tw) @ Taiwan AI Labs
 
-This repo hosts the source codes for **LORE (LLM-based Open Relation Extraction and Embedding)**. We applied LORE to PubMed abstracts for large-scale understanding of disease-gene relationships and created the PMKB-CV knowledge graph. PMKB-CV contains 2K diseases, 600K disease-gene pairs, 11M disease-gene relations, embeddings, and predicted pathogenicity scores. This resource covers 200x more disease-gene pairs than ClinVar, and the predicted pathogenicity scores achieve an 80% Mean Average Precision (MAP) in ranking pathogenic genes for diseases.
+## The LORE Literature Semantics Framework
 
-**For more details, see our paper:**
+LORE consists of three core modules:
 
-Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
+- **LLM-ORE**
+  - Curates an entity-entity relations **Knowledge Graph** from literature articles using LLM-based open relation extraction
 
-**The PMKB-CV knowledge graph is publicly available at:**
+- **LLM-EMB**
+  - Creates an entity-entity **Semantic Embedding** using LLMs reading the knowledge graph
 
-[LORE-PMKB-CV](https://doi.org/10.5281/zenodo.14607638) © 2025 by [Taiwan AI Labs](https://ailabs.tw), licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0). <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">
+- **ML-Ranker**
+  - Builds an entity-entity **Association Score Predictor** using the embedding and sparse positive labels
+
+For more details, see our paper:
+
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
+
+## The LORE PMKB-CV Dataset
+
+We have run LORE on all **4M PubMed article abstracts** that have Disease-Gene or Disease-Variant co-occurrences and created:
+
+- Knowledge graph (LLM-ORE)
+  - **70M relations** between **8k D**iseases (MeSH) and **18k G**enes (NCBI, human protein coding) curated by LLMs reading PubMed
+  - Data format: (D_id, G_id, PMID, relation) csv file
+
+- Semantic embedding (LLM-EMB)
+  - **2.5M DG vectors** created by LLMs reading the knowledge graph
+  - Data format: (D_id, G_id, vector) pkl file
+
+- DG pathogenicity scores (ML-Ranker)
+  - **3.1M DG scores** predicted by pretrained models
+  - Features, training annotations, pretrained models are also provided
+
+- Curated key semantics taxonomy
+  - A manually curated taxonomy of important semantics about DG pathogenicity in the knowledge graph
+
+The dataset is publicly available:
+- Li, P.-H. (2025). LORE PMKB-CV [Data set]. Taiwan AI Labs. https://doi.org/10.5281/zenodo.14607639
+
+## Running LORE for Custom Literature Articles and Entities
+
+### Installation
+
+```
+git clone https://github.com/jacobvsdanniel/LORE.git
+cd LORE
+pip install -r requirements.txt
+```
+
+### LLM-ORE
+
+- Using gpt-4o-mini hosted by OpenAI servers
+
+```
+python LORE.py --config_file examples/config_LLM-ORE_gpt-4o-mini.json
+```
+
+- Using meta-llama/Llama-3.1-8B-Instruct hosted by Deep Infra servers
+
+```
+python LORE.py --config_file examples/config_LLM-ORE_llama-8b.json
+```
+
+- Customize config_LLM-ORE.json for:
+
+  - server: OpenAI, Deep Infra, your own local vLLM server, any server that supports OpenAI client call
+  - model: tell the server your desired LLM
+  - prompt: you can provide your customized instructions
+  - file path to input articles and entities (example jsonl files provided)
+  - file path to output knowledge graphs (example csv files provided)
+
+### LLM-EMB
+
+- Using text-embedding-3-large hosted by OpenAI servers
+
+```
+python LORE.py --config_file examples/config_LLM-EMB.json
+```
+
+- Customize config_LLM-EMB.json for
+
+  - model: tell the server your desired LLM
+  - dimension: your desired embedding dimension
+  - file path to input knowledge graphs (example csv file provided)
+  - file path to output embedding (example pkl file provided, content: a list of (P_id, G_id, numpy_ndarray) )
+
+### ML-Ranker
+
+All the config, labels, and features (for 5k samples) in the following scenarios are included in ./examples/ML-Ranker
+
+This is enough for preparing your custom dataset with correct data formats.
+
+However, to run the following scenario and reproduce expected results, please download the [LORE PMKB-CV](https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
+
+- Scenario: k-fold cross validation
+  - Saves predicted association scores
+
+```
+python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_k-fold/config.json
+# expected stdout:
+# [DG label] 4,311 DGs: 3,175 unique Ds, 2,416 unique Gs
+# [DG feature] 652,701 DGs: 2,097 unique Ds, 17,750 unique Gs
+# [DG embedding] 541,474 DGs: 2,065 unique Ds, 17,602 unique Gs
+# 5 fold cross-validation, #D-per-fold: [419, 419, 419, 420, 420]
+# MAP=81.3% proportion_of_known_positive_DGs_predicted=94.8%
+```
+
+- Scenario: leave-one-out cross validation
+  - Saves predicted association scores
+
+```
+python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_leave-one-out/config.json
+# expected stdout:
+[DG label] 4,311 DGs: 3,175 unique Ds, 2,416 unique Gs
+[DG feature] 652,701 DGs: 2,097 unique Ds, 17,750 unique Gs
+[DG embedding] 541,474 DGs: 2,065 unique Ds, 17,602 unique Gs
+2,097 fold cross-validation, #D-per-fold: 1
+MAP=81.6% proportion_of_known_positive_DGs_predicted=94.8%
+```
+
+- Scenario: training a predictor
+  - Saves the trained predictor model
+
+```
+python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_train.json
+# expected stdout:
+# [DG label] 4,311 DGs: 3,175 unique Ds, 2,416 unique Gs
+# [DG feature] 652,701 DGs: 2,097 unique Ds, 17,750 unique Gs
+# [DG embedding] 541,474 DGs: 2,065 unique Ds, 17,602 unique Gs
+```
+
+- Scenario: testing a predictor
+  - Saves predicted association scores
+  - (if label file is provided) evaluates performance
+
+```
+python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_test.json
+# expected stdout:
+# [DG feature] 3,128,402 DGs: 8,894 unique Ds, 18,393 unique Gs
+# [DG embedding] 2,556,839 DGs: 8,561 unique Ds, 18,343 unique Gs
+# [DG label] 4,311 DGs: 3,175 unique Ds, 2,416 unique Gs
+# MAP=88.3% proportion_of_known_positive_DGs_predicted=94.8%
+```
