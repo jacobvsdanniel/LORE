@@ -20,5 +20,5 @@ Article:
 [title] yoloTITLEyolo
 [text] yoloTEXTyolo
 
-A list of good relational triples between "yoloGENEyolo" and "yoloDISEASEyolo":
-- 
+Provide a list of good relational triples between "yoloGENEyolo" and "yoloDISEASEyolo".
+Start your generation with "- ".

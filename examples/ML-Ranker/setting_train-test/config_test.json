@@ -1,0 +1,9 @@
+{
+    "task": "ML-Ranker_test",
+    "emb_file": "PMKB-CV/2025/LLM-EMB_embedding_256d.pkl",
+    "emb_dimension": 256,
+    "ranker_entity_feature_file": "PMKB-CV/2025/ML-Ranker/entity_feature.csv",
+    "ranker_entity_label_file": "PMKB-CV/2025/ML-Ranker/entity_label.csv",
+    "ranker_model_file": "PMKB-CV/2025/ML-Ranker/setting_train-test/model.txt",
+    "ranker_entity_score_file": "PMKB-CV/2025/ML-Ranker/setting_train-test/entity_score.pkl"
+}

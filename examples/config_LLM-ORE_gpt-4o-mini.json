@@ -1,0 +1,9 @@
+{
+    "task": "LLM-ORE",
+    "literature_entity_file": "examples/literature_entity.jsonl",
+    "literature_content_file": "examples/literature_content.jsonl",
+    "ore_extraction_file": "examples/LLM-ORE_extraction_gpt-4o-mini.jsonl",
+    "ore_prompt_file": "examples/LLM-ORE_prompt.txt",
+    "ore_knowledge_graph_file": "examples/LLM-ORE_knowledge_graph_gpt-4o-mini.csv",
+    "ore_model": "gpt-4o-mini"
+}

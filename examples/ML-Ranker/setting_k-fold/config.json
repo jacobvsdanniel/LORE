@@ -1,0 +1,9 @@
+{
+    "task": "ML-Ranker_cross-validation",
+    "emb_file": "PMKB-CV/2025/LLM-EMB_embedding_256d.pkl",
+    "emb_dimension": 256,
+    "ranker_entity_feature_file": "PMKB-CV/2025/ML-Ranker/entity_feature_pubmedKB.csv",
+    "ranker_entity_label_file": "PMKB-CV/2025/ML-Ranker/entity_label.csv",
+    "ranker_D_split_file": "PMKB-CV/2025/ML-Ranker/setting_k-fold/D_5-fold_disjoint_G.csv",
+    "ranker_entity_score_file": "PMKB-CV/2025/ML-Ranker/setting_k-fold/entity_score.pkl"
+}
