@@ -105,7 +105,7 @@ python LORE.py --config_file examples/config_LLM-EMB.json
 
 All the config, labels, and features (for 5k samples) in the following scenarios are included in ./examples/ML-Ranker
 
-This is enough for preparing your custom dataset with correct data formats.
+This is enough for preparing your custom dataset with correct data formats and train your own models.
 
 However, to run the following scenarios and reproduce expected results, please download the [LORE PMKB-CV](https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
 
