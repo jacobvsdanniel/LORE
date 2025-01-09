@@ -3,7 +3,7 @@
     "ore_knowledge_graph_file": "examples/LLM-ORE_knowledge_graph_gpt-4o-mini.csv",
     "emb_meta_file": "examples/LLM-EMB_meta.jsonl",
     "emb_bytes_file": "examples/LLM-EMB_bytes.jsonl",
-    "emb_file": "examples/LLM-EMB_embedding_256d.jsonl",
+    "emb_file": "examples/LLM-EMB_embedding_256d.pkl",
     "emb_model": "text-embedding-3-large",
     "emb_dimension": 256
 }
