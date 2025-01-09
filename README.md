@@ -9,7 +9,7 @@ Source code authors:
 
 Researchers:
 - Li Peng-Hsuan (李朋軒) (jacobvsdanniel [at] gmail.com) @ Taiwan AI Labs
-- Sun Yih-Yun (孫懿筠) @ Taiwan AI Labs
+- Sun Yih-Yun (孫懿筠) (jessie.yy.sun [at] gmail.com) @ Taiwan AI Labs
 - Juan Hsueh-Fen (阮雪芬) (yukijuan [at] gmail.com) @ National Taiwan University
 - Chen Chien-Yu (陳倩瑜) (chienyuchen [at] g.ntu.edu.tw) @ National Taiwan University
 - Tsai Huai-Kuang (蔡懷寬) (hktsai616 [at] gmail.com) @ Academia Sinica
