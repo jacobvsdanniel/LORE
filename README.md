@@ -9,7 +9,7 @@ Source code authors:
 
 Researchers:
 - Li Peng-Hsuan (李朋軒) (jacobvsdanniel [at] gmail.com) @ Taiwan AI Labs
-- Sun Yih-Yun (孫懿筠) @ Taiwan AI Labs
+- Sun Yih-Yun (孫懿筠) (jessie.yy.sun [at] gmail.com) @ Taiwan AI Labs
 - Juan Hsueh-Fen (阮雪芬) (yukijuan [at] gmail.com) @ National Taiwan University
 - Chen Chien-Yu (陳倩瑜) (chienyuchen [at] g.ntu.edu.tw) @ National Taiwan University
 - Tsai Huai-Kuang (蔡懷寬) (hktsai616 [at] gmail.com) @ Academia Sinica
@@ -105,12 +105,14 @@ python LORE.py --config_file examples/config_LLM-EMB.json
 
 All the config, labels, and features (for 5k samples) in the following scenarios are included in ./examples/ML-Ranker
 
-This is enough for preparing your custom dataset with correct data formats.
+This is enough for preparing your custom dataset with correct data formats and train your own models.
 
 However, to run the following scenarios and reproduce expected results, please download the [LORE PMKB-CV](https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
 
 - Scenario: k-fold cross validation
+
   - Saves predicted association scores
+  - Evaluates performance
 
 ```
 python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_k-fold/config.json
@@ -123,7 +125,9 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_k-fold/config.json
 ```
 
 - Scenario: leave-one-out cross validation
+
   - Saves predicted association scores
+  - Evaluates performance
 
 ```
 python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_leave-one-out/config.json
@@ -136,6 +140,7 @@ MAP=81.6% proportion_of_known_positive_DGs_predicted=94.8%
 ```
 
 - Scenario: training a predictor
+
   - Saves the trained predictor model
 
 ```
@@ -147,8 +152,9 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_tr
 ```
 
 - Scenario: testing a predictor
+
   - Saves predicted association scores
-  - (if label file is provided) evaluates performance
+  - (optional) Evaluates performance if label file is provided
 
 ```
 python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_test.json
