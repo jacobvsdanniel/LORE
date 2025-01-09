@@ -683,11 +683,15 @@ def run_ore_extraction():
             logger.info(f"<ore_model> is not specified. Will use {config.ore_model}.")
         if config.ore_requests_per_minute <= 0:
             config.ore_requests_per_minute = 3  # gpt-4o-mini: [free tier: 3], [tier 5: 30,000]
-            logger.info(f"<ore_requests_per_minute> is not specified. Will use {config.ore_requests_per_minute}.")
+            logger.info(
+                f"<ore_requests_per_minute> is not specified. Will use {config.ore_requests_per_minute} (free tier)."
+            )
             logger.info("check https://platform.openai.com/docs/guides/rate-limits for more info")
         if config.ore_tokens_per_minute <= 0:
             config.ore_tokens_per_minute = 40000  # gpt-4o-mini: [free tier: 40,000], [tier 5: 150,000,000]
-            logger.info(f"<ore_tokens_per_minute> is not specified. Will use {config.ore_tokens_per_minute}.")
+            logger.info(
+                f"<ore_tokens_per_minute> is not specified. Will use {config.ore_tokens_per_minute}. (free tier)"
+            )
             logger.info("check https://platform.openai.com/docs/guides/rate-limits for more info")
         asyncio.run(run_ore_extraction_openai())
     return
@@ -956,11 +960,15 @@ async def run_emb_extraction():
         logger.info(f"<ore_model> is not specified. Will use {config.emb_model}.")
     if config.emb_requests_per_minute <= 0:
         config.emb_requests_per_minute = 100  # text-embedding-3-large: [free tier: 100], [tier 5: 30,000]
-        logger.info(f"<emb_requests_per_minute> is not specified. Will use {config.emb_requests_per_minute}.")
+        logger.info(
+            f"<emb_requests_per_minute> is not specified. Will use {config.emb_requests_per_minute}. (free tier)"
+        )
         logger.info("check https://platform.openai.com/docs/guides/rate-limits for more info")
     if config.emb_tokens_per_minute <= 0:
-        config.emb_tokens_per_minute = 10000000  # text-embedding-3-large: [free tier: 10,000], [tier 5: 10,000,000]
-        logger.info(f"<emb_tokens_per_minute> is not specified. Will use {config.emb_tokens_per_minute}.")
+        config.emb_tokens_per_minute = 10000  # text-embedding-3-large: [free tier: 10,000], [tier 5: 10,000,000]
+        logger.info(
+            f"<emb_tokens_per_minute> is not specified. Will use {config.emb_tokens_per_minute} (free tier)."
+        )
         logger.info("check https://platform.openai.com/docs/guides/rate-limits for more info")
 
     # set up client
