@@ -7,6 +7,7 @@ import math
 import time
 import heapq
 import pickle
+import random
 import struct
 import asyncio
 import difflib
@@ -78,6 +79,16 @@ class Config:
         self.ranker_lgb_data_sample_strategy = "goss"
         self.ranker_lgb_num_leaves = 12
         self.ranker_lgb_max_depth = 4
+
+        # Key-Semantics
+        self.semantics_lemma_file = ""
+        self.semantics_candidate_file = ""
+        self.semantics_file = ""
+        self.semantics_taxonomy_path = ""
+        self.semantics_knowledge_graph_file = ""
+        self.semantics_min_DGs = 100
+        self.semantics_min_gold_DG_relations = 0.5
+        self.semantics_samples_per_lemma = 10
         return
 
     def load(self, config_file):
@@ -1603,6 +1614,260 @@ def run_ranker_test():
 
 
 """
+Key-Semantics
+"""
+
+
+def extract_lemma_for_knowledge_graph():
+    from nltk.tokenize.destructive import NLTKWordTokenizer
+    from nltk.stem.snowball import SnowballStemmer
+
+    # tokenize knowledge graph relations and extract lemmas
+    logger.info("extracting lemmas for knowledge graph...")
+    tokenizer = NLTKWordTokenizer()
+    stemmer = SnowballStemmer("english")
+    relations = 0
+    lemma_to_relations = defaultdict(lambda: 0)
+
+    with open(config.ore_knowledge_graph_file, "r", encoding="utf8", newline="") as fr, \
+            open(config.semantics_lemma_file, "w", encoding="utf8") as fw:
+        reader = csv.reader(fr, dialect="csv")
+
+        header = next(reader)
+        assert header == ["D_id", "G_id", "P_id", "relation"]
+
+        for d, g, p, relation in reader:
+            lemma_dict = {}
+            for token in tokenizer.tokenize(relation):
+                if len(token) <= 2:
+                    continue
+                lemma = stemmer.stem(token)
+                lemma_dict[lemma] = True
+
+            datum = {
+                "D_id": d, "G_id": g, "P_id": p, "relation": relation,
+                "lemma": list(lemma_dict.keys()),
+            }
+            json.dump(datum, fw)
+            fw.write("\n")
+
+            relations += 1
+            for lemma in lemma_dict:
+                lemma_to_relations[lemma] += 1
+
+    lemmas = len(lemma_to_relations)
+    logger.info(f"extracted {lemmas:,} lemmas for {relations:,} relations")
+    return
+
+
+def extract_candidate_key_semantics_lemma(d_g_label):
+    # read knowledge graph relation lemmas and calculate stats
+    logger.info("reading lemmas from knowledge graph...")
+    lemma_to_dg_dict = defaultdict(lambda: {})
+    lemma_label_relations = defaultdict(lambda: defaultdict(lambda: 0))
+
+    with open(config.semantics_lemma_file, "r", encoding="utf8") as f:
+        for line in f:
+            datum = json.loads(line)
+            d = datum["D_id"]
+            g = datum["G_id"]
+            lemma_list = datum["lemma"]
+
+            # we say that a lemma is inaccurate if it comes from some "negative" DG
+            #   but when that D is simply not annotated at all, all its DG are not regarded as "negative"
+            is_labeled_d = d in d_g_label
+            label = d_g_label.get(d, {}).get(g, 0)
+
+            for lemma in lemma_list:
+                lemma_to_dg_dict[lemma][(d, g)] = True
+                if is_labeled_d:
+                    lemma_label_relations[lemma][label] += 1
+
+    lemmas = len(lemma_to_dg_dict)
+    logger.info(f"calculated stats for {lemmas:,} lemmas")
+
+    # select high coverage and high precision lemmas as candidate key-semantics lemmas
+    logger.info("extracting candidate key-semantics lemmas...")
+    candidate_list = []
+    for lemma, dg_dict in lemma_to_dg_dict.items():
+        dgs = len(dg_dict)
+        if dgs < config.semantics_min_DGs:
+            continue
+        label_to_relations = lemma_label_relations[lemma]
+        try:
+            gold_dg_relations = label_to_relations.get(1, 0) / sum(label_to_relations.values())
+        except ZeroDivisionError:
+            gold_dg_relations = 0
+        if gold_dg_relations < config.semantics_min_gold_DG_relations:
+            continue
+        candidate_list.append((lemma, dgs, gold_dg_relations))
+    candidate_list = sorted(candidate_list, key=lambda lemma_cov_acc: (-lemma_cov_acc[2], -lemma_cov_acc[1]))
+    candidates = len(candidate_list)
+    logger.info(f"extracted {candidates:,} candidate key-semantics lemmas")
+    return candidate_list
+
+
+def extract_lemma_relations_from_knowledge_graph(candidate_list, d_g_label):
+    # collect relations for candidate key-semantics lemmas
+    logger.info("reading relations for candidate key-semantics lemmas from knowledge graph...")
+    lemma_label_d_g_relationlist = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: []))))
+    candidate_lemma_dict = {
+        lemma: True
+        for lemma, dgs, gold_dg_relations in candidate_list
+    }
+    candidates = len(candidate_list)
+    relations = 0
+    with open(config.semantics_lemma_file, "r", encoding="utf8") as f:
+        for line in f:
+            datum = json.loads(line)
+            d = datum["D_id"]
+            g = datum["G_id"]
+            p = datum["P_id"]
+            relation = datum["relation"]
+            lemma_list = datum["lemma"]
+            label = d_g_label.get(d, {}).get(g, 0)
+            has_candidate_lemma = False
+
+            for lemma in lemma_list:
+                if lemma in candidate_lemma_dict:
+                    lemma_label_d_g_relationlist[lemma][label][d][g].append(
+                        (p, relation)
+                    )
+                    has_candidate_lemma = True
+
+            if has_candidate_lemma:
+                relations += 1
+    logger.info(f"read {relations:,} relations for {candidates:,} candidate key-semantics lemmas")
+
+    # sample a set of relations for candidate key-semantics lemmas
+    logger.info(f"sampling {config.semantics_samples_per_lemma:,} relations for each key-semantics lemma label...")
+    relations = 0
+    with open(config.semantics_candidate_file, "w", encoding="utf8", newline="") as f:
+        writer = csv.writer(f, dialect="csv")
+        header = ["tag", "DGs", "gold DG relations", "D_id", "G_id", "DG label", "P_id", "relation"]
+        writer.writerow(header)
+
+        for lemma, dgs, gold_dg_relations in candidate_list:
+            gold_dg_relations = f"{gold_dg_relations:.0%}"
+            label_d_g_relationlist = lemma_label_d_g_relationlist.get(lemma, {})
+
+            for label in sorted(label_d_g_relationlist):
+                d_g_relationlist = label_d_g_relationlist[label]
+                dg_list = [
+                    (d, g)
+                    for d, g_to_relationlist in d_g_relationlist.items()
+                    for g in g_to_relationlist
+                ]
+                if len(dg_list) > config.semantics_samples_per_lemma:
+                    dg_list = random.sample(dg_list, config.semantics_samples_per_lemma)
+                for d, g in dg_list:
+                    p, relation = random.choice(d_g_relationlist[d][g])
+                    writer.writerow([lemma, dgs, gold_dg_relations, d, g, label, p, relation])
+                    relations += 1
+    logger.info(f"sampled {relations:,} relations for {candidates:,} candidate key-semantics lemmas")
+    return
+
+
+def read_semantics_data():
+    tag_semantics_list = []
+
+    logger.info("reading curated key semantics...")
+    if config.semantics_file:
+        with open(config.semantics_file, "r", encoding="utf8", newline="") as f:
+            reader = csv.reader(f, dialect="csv")
+            header = next(reader)
+            assert header == ["tag", "semantics"]
+            for lemma, semantics in reader:
+                tag_semantics_list.append((lemma, semantics))
+
+    else:
+        semantics_file_list = os.listdir(config.semantics_taxonomy_path)
+        for semantics_file in semantics_file_list:
+            if not semantics_file.endswith(".txt"):
+                continue
+            semantics_file = os.path.join(config.semantics_taxonomy_path, semantics_file)
+            with open(semantics_file, "r", encoding="utf8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("["):
+                        continue
+                    line = line.split(",")
+                    if len(line) != 2:
+                        continue
+                    tag, semantics = line
+                    tag_semantics_list.append((tag, semantics))
+
+    tags = len(tag_semantics_list)
+    logger.info(f"read {tags:,} key-semantics tags")
+    return tag_semantics_list
+
+
+def run_semantics_extraction():
+    assert os.path.exists(config.ore_knowledge_graph_file)
+    assert os.path.exists(config.ranker_entity_label_file)
+
+    extract_lemma_for_knowledge_graph()
+    d_g_label = read_label_data()
+    candidate_list = extract_candidate_key_semantics_lemma(d_g_label)
+    extract_lemma_relations_from_knowledge_graph(candidate_list, d_g_label)
+    return
+
+
+def run_semantics_tagging():
+    assert os.path.exists(config.semantics_lemma_file)
+    if config.semantics_file:
+        logger.info("<semantics_file> is provided. <semantics_taxonomy_path> will not be used.")
+        assert os.path.exists(config.semantics_file)
+    else:
+        logger.info("<semantics_file> is not provided. <semantics_taxonomy_path> will be used.")
+        assert os.path.exists(config.semantics_taxonomy_path)
+
+    all_tag_semantics_list = read_semantics_data()
+    all_tag_to_order = {
+        tag: index + 1
+        for index, (tag, _semantics) in enumerate(all_tag_semantics_list)
+    }
+
+    logger.info("adding key semantics tags to knowledge graph...")
+    header = ["D_id", "G_id", "P_id", "tag", "relation"]
+    tagged_relations = 0
+    relations = 0
+
+    with open(config.semantics_lemma_file, "r", encoding="utf8") as fr, \
+            open(config.semantics_knowledge_graph_file, "w", encoding="utf8", newline="") as fw:
+        writer = csv.writer(fw, dialect="csv")
+        writer.writerow(header)
+
+        for line in fr:
+            datum = json.loads(line)
+            d = datum["D_id"]
+            g = datum["G_id"]
+            p = datum["P_id"]
+            relation = datum["relation"]
+            lemma_list = datum["lemma"]
+
+            tag_list = []
+            for lemma in lemma_list:
+                order = all_tag_to_order.get(lemma, 0)
+                if order > 0:
+                    tag_list.append((order, lemma))
+
+            relations += 1
+            if tag_list:
+                tagged_relations += 1
+
+            tag_list = ",".join(lemma for _order, lemma in sorted(tag_list))
+            writer.writerow([d, g, p, tag_list, relation])
+
+    logger.info(
+        f"built knowledge graph:"
+        f" {tagged_relations:,} tagged relations;"
+        f" {relations:,} all relations"
+    )
+    return
+
+
+"""
 Main
 """
 
@@ -1632,6 +1897,12 @@ def main():
 
     elif config.task == "ML-Ranker_test":
         run_ranker_test()
+
+    elif config.task == "Key-Semantics_extraction":
+        run_semantics_extraction()
+
+    elif config.task == "Key-Semantics_tagging":
+        run_semantics_tagging()
 
     return
 

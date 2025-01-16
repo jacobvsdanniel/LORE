@@ -1,0 +1,6 @@
+{
+    "task": "Key-Semantics_tagging",
+    "semantics_lemma_file": "examples/Key-Semantics_lemma.jsonl",
+    "semantics_file": "examples/Key-Semantics_semantics.csv",
+    "semantics_knowledge_graph_file": "examples/Key-Semantics_knowledge_graph.csv"
+}

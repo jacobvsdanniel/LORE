@@ -1,0 +1,6 @@
+{
+    "task": "Key-Semantics_tagging",
+    "semantics_lemma_file": "examples/Key-Semantics_lemma.jsonl",
+    "semantics_taxonomy_path": "PMKB-CV/key_semantics_taxonomy/taxonomy",
+    "semantics_knowledge_graph_file": "examples/Key-Semantics_knowledge_graph.csv"
+}

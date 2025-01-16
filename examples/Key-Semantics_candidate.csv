@@ -1,0 +1,327 @@
+tag,DGs,gold DG relations,D_id,G_id,DG label,P_id,relation
+associ,2,100%,MESH:C538212,1184,1,10620205,CLCN5 is associated with Dent's disease
+associ,2,100%,MESH:D000081003,51119,1,14743349,SBDS is a gene locus associated with Shwachman-Diamond Syndrome
+with,2,100%,MESH:C538212,1184,1,23566014,C221R is a mutant associated with Dent's disease
+with,2,100%,MESH:D000081003,51119,1,26866830,c.258+2T>C was detected in the newborn with Shwachman-Diamond syndrome
+diseas,2,100%,MESH:C538212,1184,1,9734595,leucine for serine at codon 244 was found in a patient with Dent's disease
+diseas,2,100%,MESH:D000081003,51119,1,17046571,p.R175W may contribute to severe disease in SDS patients
+implic,2,100%,MESH:C538212,1184,1,36646056,CLCN5 is implicated in the pathogenesis of Dent's disease
+implic,2,100%,MESH:D000081003,51119,1,34704233,SBDS is implicated in exocrine pancreatic dysfunction in Shwachman-Diamond syndrome
+link,2,100%,MESH:C538212,1184,1,16822791,IVS3 +2 G>C is linked to alternative splicing in Dent's disease
+link,2,100%,MESH:D000081003,51119,1,21435510,SBDS is linked to impaired hematopoiesis in SDS
+loss,2,100%,MESH:C538212,1184,1,36674829,loss of CLCN5 might be a consequence of glomerular damage in Tubulopathy Dent Disease
+loss,2,100%,MESH:D000081003,51119,1,25991726,SBDS loss of interaction with EFL1 contributes to Shwachman-Diamond syndrome
+function,2,100%,MESH:C538212,1184,1,14730510,CLC-5 disrupts function in Dent's disease
+function,2,100%,MESH:D000081003,51119,1,21536732,SBDS is essential for the function related to Shwachman-Diamond syndrome
+mutat,2,100%,MESH:C538212,1184,1,9853249,L278F is one of the mutations identified in Japanese children with Dent's disease
+mutat,2,100%,MESH:D000081003,51119,1,34704233,SBDS mutations increase the risk of acute myeloid leukemia in Shwachman-Diamond syndrome patients
+are,2,100%,MESH:C538212,1184,1,8559248,CLCN5 mutations are found in Dent's disease kindred
+are,2,100%,MESH:D000081003,51119,1,12496757,SBDS mutations are found in individuals with Shwachman-Diamond syndrome
+characterist,2,100%,MESH:C538212,1184,1,10916075,CLCN5 mutations lead to characteristics of Dent's disease
+characterist,2,100%,MESH:D000081003,51119,1,26743985,SBDS associated with multi-system disorder characteristics in Shwachman-Diamond Syndrome
+relat,2,100%,MESH:C538212,1184,1,9893114,single base deletion at codon 116 causes disturbances in renal function related to hypercalciuric nephrolithiasis
+relat,2,100%,MESH:D000081003,51119,1,17643419,SBDS encodes a protein related to SDS
+caus,2,100%,MESH:C538212,1184,1,22083641,CLCN5 mutations cause Dent's disease
+caus,2,100%,MESH:D000081003,51119,1,16822460,SBDS mutations cause Shwachman-Diamond syndrome
+contribut,2,100%,MESH:C538212,1184,1,17262170,976delG contributes to renal tubulopathy associated with Dent's disease
+contribut,2,100%,MESH:D000081003,51119,1,36162759,c.258+2T>C contributes to exocrine pancreatic insufficiency in Shwachman-Diamond syndrome
+classifi,2,100%,MESH:C538212,1184,1,36578800,c.2152C>T is classified as a pathogenic variant for X-linked Dent Disease
+classifi,2,100%,MESH:D000081003,51119,1,14749921,184TA>CT is classified as a novel mutation in Japanese patients with Shwachman-Diamond syndrome
+nonsens,2,100%,MESH:C538212,1184,1,36646056,c.100C>T is categorized as a nonsense mutation related to Dent's disease
+nonsens,2,100%,MESH:D000081003,51119,1,35453634,K62X is a nonsense mutation found in Shwachman-Diamond Syndrome
+found,2,100%,MESH:C538212,1184,1,9893114,single base insertion at codon 514 is a mutation found in hypercalciuric nephrolithiasis
+found,2,100%,MESH:D000081003,51119,1,14749921,292-295delAAAG is found in Japanese patients with Shwachman-Diamond syndrome
+patient,2,100%,MESH:C538212,1184,1,32495484,Patients with CLCN5 mutations have Dent-1 disease
+patient,2,100%,MESH:D000081003,51119,1,24898207,p.K33T is found in a patient with SDS
+one,2,100%,MESH:C538212,1184,1,10469281,Arg704Stop is one of the mutations identified in patients with Dent's disease
+one,2,100%,MESH:D000081003,51119,1,15942154,258+2 T > C is one of the prevalent mutations in Japanese patients with Shwachman-Diamond syndrome
+the,2,100%,MESH:C538212,1184,1,23047739,CLCN5 is linked to the severity of Dent's disease
+the,2,100%,MESH:D000081003,51119,1,35322185,c.183_184TA > CT contributes to the phenotypic features of Shwachman Diamond Syndrome
+identifi,2,100%,MESH:C538212,1184,1,9853249,S270R is identified in a variant of Dent's disease
+identifi,2,100%,MESH:D000081003,51119,1,15342903,+2T--> C was identified in patient with Shwachman-Diamond syndrome
+result,2,100%,MESH:C538212,1184,1,10469281,functional loss of CLCN5 is likely to result in features of Dent's disease
+result,2,100%,MESH:D000081003,51119,1,19148133,c.183_184TA>CT results in exocrine pancreatic insufficiency in Shwachman syndrome
+was,2,100%,MESH:C538212,1184,1,24428215,deletion at nucleotide 246 was identified in a patient with Dent-1 disease
+was,2,100%,MESH:D000081003,51119,1,24426364,184TA-CT was identified in the diagnosis of Shwachman-Diamond syndrome
+spectrum,2,100%,MESH:C538212,1184,1,36646056,c.1241_1242dupAA expands the spectrum of CLCN5 mutations in Dent's disease
+spectrum,2,100%,MESH:D000081003,51119,1,17400792,SBDS mutations expand the phenotypic spectrum of Shwachman-Diamond syndrome
+type,2,100%,MESH:C538212,1184,1,36284768,CLCN5 is linked to proteinuria and hypercalciuria in Type 1 Dent disease
+type,2,100%,MESH:D000081003,51119,1,14749921,258+2T>C is a type of compound heterozygous mutation in Shwachman-Diamond syndrome
+featur,2,100%,MESH:C538212,1184,1,20654030,V505G contributes to the clinical features of Dent's disease
+featur,2,100%,MESH:D000081003,51119,1,24330988,c.258+2T > C contributes to the clinical features of Shwachman-Diamond syndrome
+affect,2,100%,MESH:C538212,1184,1,26042048,ClC-5 affects renal endocytosis and endosomal acidification in Dent's disease
+affect,2,100%,MESH:D000081003,51119,1,34948128,SBDS affects osteoblast functions in Shwachman-Diamond syndrome
+novel,2,100%,MESH:C538212,1184,1,20654030,IVS4-2A > G is characterized as a novel mutation in Dent's disease
+novel,2,100%,MESH:D000081003,51119,1,14749921,184TA>CT is identified as a novel mutation in families with Shwachman-Diamond syndrome
+gene,2,100%,MESH:C538212,1184,1,36578800,c.2152C>T is located in the CLCN5 gene associated with X-linked Dent Disease
+gene,2,100%,MESH:D000081003,51119,1,32434641,c.184A>T is a type of SBDS gene mutation related to Shwachman-Diamond syndrome
+encod,2,100%,MESH:C538212,1184,1,10906159,CLCN5 encodes a protein associated with Dent's disease
+encod,2,100%,MESH:D000081003,51119,1,26743985,SBDS encodes a highly conserved protein related to Shwachman-Diamond Syndrome
+truncat,2,100%,MESH:C538212,1184,1,10906159,A to T transversion at codon 601 contributes to truncated CLC-5 in Dent's disease
+truncat,2,100%,MESH:D000081003,51119,1,15701631,K62X is a common truncation mutation in SDS
+and,2,100%,MESH:C538212,1184,1,26042048,ClC-5 affects renal endocytosis and endosomal acidification in Dent's disease
+and,2,100%,MESH:D000081003,51119,1,18324336,SBDS contributes to bone marrow failure and leukemogenesis in SDS
+protein,2,100%,MESH:C538212,1184,1,10916075,CLCN5 encodes a protein related to Dent's disease
+protein,2,100%,MESH:D000081003,51119,1,27805607,SBDS is a protein related to Shwachman-Diamond Syndrome
+involv,2,100%,MESH:C538212,1184,1,9931332,CLC-5 is involved in the pathophysiological basis of Dent's disease
+involv,2,100%,MESH:D000081003,51119,1,18190602,SBDS is involved in the genetic defect of Shwachman-Diamond syndrome
+dysfunct,2,100%,MESH:C538212,1184,1,22083641,CLCN5 dysfunction underlies Dent's disease
+dysfunct,2,100%,MESH:D000081003,51119,1,14749921,SBDS is associated with bone marrow dysfunction in Shwachman-Diamond syndrome
+low,2,100%,MESH:C538212,1184,1,18931044,CLCN5 is related to low molecular weight proteinuria in Dent's disease
+low,2,100%,MESH:D000081003,51119,1,23115272,SBDS levels are low in Shwachman-Diamond syndrome patients
+molecular,2,100%,MESH:C538212,1184,1,18931044,CLCN5 is related to low molecular weight proteinuria in Dent's disease
+molecular,2,100%,MESH:D000081003,51119,1,17376717,c.258+2T>C was detected during routine molecular screening for Shwachman-Diamond syndrome
+that,2,100%,MESH:C538212,1184,1,10916075,CLCN5 encodes a protein that is involved in Dent's disease
+that,2,100%,MESH:D000081003,51119,1,21536731,SBDS supports the idea that a ribosomopathy may underlie Shwachman-Diamond syndrome
+lead,2,100%,MESH:C538212,1184,1,26370164,CLCN5 defects lead to low-molecular-weight proteinuria in Dent's disease
+lead,2,100%,MESH:D000081003,51119,1,35453634,c.183-184TA>CT leads to bone marrow failure in Shwachman-Diamond Syndrome
+clinic,2,100%,MESH:C538212,1184,1,16822791,F444fsX448 is linked to the clinical features of Dent's disease
+clinic,2,100%,MESH:D000081003,51119,1,33607811,c.184a>T contributes to clinical manifestations of Shwachman-Diamond syndrome
+symptom,2,100%,MESH:C538212,1184,1,15719255,E609X is associated with clinical symptoms of Dent's disease
+symptom,2,100%,MESH:D000081003,51119,1,34704233,p.K62X contributes to the symptoms of Shwachman-Diamond syndrome
+has,2,100%,MESH:C538212,1184,1,9328927,CLCN5 has mutations related to Dent's disease
+has,2,100%,MESH:D000081003,51119,1,36577524,SBDS has mutations in patients with Shwachman-Diamond syndrome
+character,2,100%,MESH:C538212,1184,1,26036722,ClC-5 is characterized by dysfunction leading to Dent's disease
+character,2,100%,MESH:D000081003,51119,1,17376717,c.258+2T>C is part of the molecular characterization of Shwachman-Diamond syndrome
+defect,2,100%,MESH:C538212,1184,1,27117801,S244L has functional defects in Dent disease
+defect,2,100%,MESH:D000081003,51119,1,18190602,SBDS is involved in the genetic defect of Shwachman-Diamond syndrome
+express,2,100%,MESH:C538212,1184,1,36674829,CLCN5 expression is down-regulated in Tubulopathy Dent Disease
+express,2,100%,MESH:D000081003,51119,1,17643419,SBDS affects expression of genes involved in brain development in SDS
+relev,2,100%,MESH:C538212,1184,1,11167024,expression of CLCN5 is relevant to Dent's disease
+relev,2,100%,MESH:D000081003,51119,1,27553422,SBDS is relevant for the hematological phenotype of Shwachman-Diamond syndrome
+respons,2,100%,MESH:C538212,1184,1,24428215,CLCN5 is responsible for Dent-1 disease
+respons,2,100%,MESH:D000081003,51119,1,36577524,SBDS is responsible for Shwachman-Diamond syndrome
+for,2,100%,MESH:C538212,1184,1,9328927,CLCN5 is responsible for Dent's disease
+for,2,100%,MESH:D000081003,51119,1,14743349,SBDS is responsible for Shwachman-Diamond Syndrome in a majority of patients
+pathophysiolog,2,100%,MESH:C538212,1184,1,14673707,CLCN5 plays a role in the pathophysiology of Dent's disease
+pathophysiolog,2,100%,MESH:D000081003,51119,1,23792098,SBDS plays a role in the pathophysiology of Shwachman Diamond syndrome
+model,2,100%,MESH:C538212,1184,1,18322545,CLCN5 is studied in models of Dent's disease
+model,2,100%,MESH:D000081003,51119,1,28056084,R126T is a mouse model for Shwachman-Diamond Syndrome (SDS)
+effect,2,100%,MESH:C538212,1184,1,12187318,Animal models with CLC-5 knockout provide insights into the effects of Dent's disease
+effect,2,100%,MESH:D000081003,51119,1,19222471,SBDS contributes to mutator effect in Shwachman-Diamond syndrome
+pathogenesi,2,100%,MESH:C538212,1184,1,19546591,nt930delTCinsA contributes to the pathogenesis of Dent's disease
+pathogenesi,2,100%,MESH:D000081003,51119,1,24898207,c.98A > C contributes to the pathogenesis of SDS
+studi,2,100%,MESH:C538212,1184,1,19546591,523delVal was studied in the context of Dent's disease
+studi,2,100%,MESH:D000081003,51119,1,15342903,SBDS was studied in relation to Shwachman-Diamond syndrome
+mechan,2,100%,MESH:C538212,1184,1,15615094,Molecular studies of CLC-5 have increased understanding of the renal tubular mechanisms in Dent's disease
+mechan,2,100%,MESH:D000081003,51119,1,21536732,SBDS plays a role in the mechanism of Shwachman-Diamond syndrome
+under,2,100%,MESH:C538212,1184,1,12187318,CLC-5 is studied in relation to the mechanisms underlying Dent's disease
+under,2,100%,MESH:D000081003,51119,1,19016724,SBDS underlies congenital Shwachman Diamond syndrome (SDS)
+use,2,100%,MESH:C538212,1184,1,12187318,CLC-5 knockout models are used to investigate mechanisms of Dent's disease
+use,2,100%,MESH:D000081003,51119,1,28056084,R126T is used to study the effects of SBDS loss in SDS
+play,2,100%,MESH:C538212,1184,1,30426109,CLCN5 plays a role in Dent's disease pathology
+play,2,100%,MESH:D000081003,51119,1,26743985,SBDS plays a distinct role beyond protein translation in Shwachman-Diamond Syndrome
+role,2,100%,MESH:C538212,1184,1,36688186,CLCN5 plays a role in the pathogenesis of Dent's disease
+role,2,100%,MESH:D000081003,51119,1,35453634,SBDS plays a role in bone marrow function in Shwachman-Diamond syndrome
+develop,2,100%,MESH:C538212,1184,1,12187318,Defective endosomal acidification involving CLC-5 plays a role in the development of Dent's disease
+develop,2,100%,MESH:D000081003,51119,1,18356737,SBDS plays a role in myeloid development related to Shwachman-Diamond syndrome
+have,2,100%,MESH:C538212,1184,1,9893114,Mutations in CLCN5 have been reported in hypercalciuric nephrolithiasis
+have,2,100%,MESH:D000081003,51119,1,16867904,428C-->G was found in a Japanese patient presumed to have Shwachman-Diamond syndrome
+failur,2,100%,MESH:C538212,1184,1,36688186,p.(Ser270Arg) contributes to kidney failure in Dent's disease
+failur,2,100%,MESH:D000081003,51119,1,35453634,c.183-184TA>CT leads to bone marrow failure in Shwachman-Diamond Syndrome
+patholog,2,100%,MESH:C538212,1184,1,17262170,W314X contributes to the pathology of Dent's disease
+patholog,2,100%,MESH:D000081003,51119,1,32104616,SBDS plays a role in the pathology of Shwachman-Diamond Syndrome
+were,2,100%,MESH:C538212,1184,1,27625851,thirteen distinct CLCN5 mutations were identified in patients with Dent's disease
+were,2,100%,MESH:D000081003,51119,1,15769891,SBDS mutations were observed in the majority of Shwachman-Diamond syndrome cases
+famili,2,100%,MESH:C538212,1184,1,9853249,S270R was identified in Japanese families with Dent's disease
+famili,2,100%,MESH:D000081003,51119,1,14749921,292-295delAAAG is identified in Japanese families with SDS
+been,2,100%,MESH:C538212,1184,1,15469420,mutations in CLCN5 have been linked to Dent's disease
+been,2,100%,MESH:D000081003,51119,1,35893049,SBDS has been found in about 90% of patients with Shwachman-Diamond Syndrome
+essenti,2,100%,MESH:C538212,1184,1,25001568,CLCN5 is essential for renal tubular epithelial function in Dent disease
+essenti,2,100%,MESH:D000081003,51119,1,16914746,Sbds is essential for early mammalian development related to Shwachman-Diamond syndrome
+exhibit,2,100%,MESH:C538212,1184,1,26389017,patients with CLCN5 mutations exhibit different clinical complications in Dent disease
+exhibit,2,100%,MESH:D000081003,51119,1,17920346,patients with SBDS mutations exhibit Shwachman-Diamond syndrome
+impair,2,100%,MESH:C538212,1184,1,19657328,C221R results in impaired ClC-5 function in Dent's disease
+impair,2,100%,MESH:D000081003,51119,1,17638857,inhibition of SBDS impairs hematopoiesis related to Shwachman-Diamond syndrome
+can,2,100%,MESH:C538212,1184,1,9893114,CLCN5 mutations can cause variations in phenotypes related to hypercalciuric nephrolithiasis
+can,2,100%,MESH:D000081003,51119,1,16007594,mutations in SBDS can lead to acute myeloid leukemia in SDS patients
+restor,2,100%,MESH:C538212,1184,1,13679301,ClC-5 function can be restored in hereditary disorder Dent's disease
+restor,2,100%,MESH:D000081003,51119,1,35453634,SBDS expression is restored by ataluren in Shwachman-Diamond Syndrome
+disord,2,100%,MESH:C538212,1184,1,15895257,L521R is linked to kidney disorders related to Dent's disease
+disord,2,100%,MESH:D000081003,51119,1,33115644,SBDS causes neurodevelopmental disorders in Shwachman-Diamond syndrome
+loss-of-funct,2,100%,MESH:C538212,1184,1,9653142,ClC-5 loss-of-function mutations lead to Dent's disease
+loss-of-funct,2,100%,MESH:D000081003,51119,1,26185170,Sbds is characterized by loss-of-function mutations in Shwachman-Diamond syndrome
+disrupt,2,100%,MESH:C538212,1184,1,25670966,CLCN5 disruption confirms diagnosis of Dent disease
+disrupt,2,100%,MESH:D000081003,51119,1,22510201,disruption of SBDS recapitulates SDS phenotypes
+abnorm,2,100%,MESH:C538212,1184,1,21859490,CLCN5 plays a role in renal function abnormalities in Dent's disease
+abnorm,2,100%,MESH:D000081003,51119,1,33607811,c.184a>T contributes to the genetic abnormalities of Shwachman-Diamond syndrome
+contain,2,100%,MESH:C538212,1184,1,14569459,CLCN5 contains an abnormally large exon 11 in Dent's disease patient
+contain,2,100%,MESH:D000081003,51119,1,36162759,SBDS gene contains common variants associated with Shwachman-Diamond syndrome
+exon,2,100%,MESH:C538212,1184,1,14569459,CLCN5 contains an abnormally large exon 11 in Dent's disease patient
+exon,2,100%,MESH:D000081003,51119,1,17376717,SBDS has a novel deletion in exon 3 related to Shwachman-Diamond syndrome
+locat,2,100%,MESH:C538212,1184,1,14569459,CLCN5 is located in renal tubular cells affected by Dent's disease
+locat,2,100%,MESH:D000081003,51119,1,19148133,SBDS gene is located on chromosome 7 in Shwachman syndrome
+cell,2,100%,MESH:C538212,1184,1,14569459,CLCN5 is located in renal tubular cells affected by Dent's disease
+cell,2,100%,MESH:D000081003,51119,1,19014892,SBDS depletion leads to growth inhibition in cells related to Shwachman-Diamond syndrome
+sequenc,2,100%,MESH:C538212,1184,1,8626585,ClC-5 has almost identical sequence to a partial sequence of human cDNA related to Dent's disease
+sequenc,2,100%,MESH:D000081003,51119,1,30308536,c.428C > T is part of the genetic sequencing related to Shwachman-Diamond syndrome
+phenotyp,2,100%,MESH:C538212,1184,1,15719255,R637X contributes to the phenotypic presentation of Dent's disease
+phenotyp,2,100%,MESH:D000081003,51119,1,28056084,SBDS loss leads to a fragile cellular phenotype in SDS
+variant,2,100%,MESH:C538212,1184,1,14673707,CLCN5 mutation leads to phenotypic variants of Dent's disease
+variant,2,100%,MESH:D000081003,51119,1,34758064,c.258 + 2T>C is a variant associated with biallelic SBDS mutations in Shwachman-Diamond syndrome
+detect,2,100%,MESH:C538212,1184,1,15125028,G506R was detected in one of the patients with Dent's disease
+detect,2,100%,MESH:D000081003,51119,1,17376717,c.258+2T>C was detected during routine molecular screening for Shwachman-Diamond syndrome
+sever,2,100%,MESH:C538212,1184,1,20654030,S244L may impact the severity of Dent's disease symptoms
+sever,2,100%,MESH:D000081003,51119,1,17046571,p.R175W causes severe disease in Shwachman-Diamond syndrome
+inherit,2,100%,MESH:C538212,1184,1,15042536,CLCN5 is linked to inherited proximal tubulopathies like X-linked hypercalciuric nephrolithiasis
+inherit,2,100%,MESH:D000081003,51119,1,24898207,c.98A > C was inherited from the mother of the child with SDS
+some,2,100%,MESH:C538212,1184,1,15086899,Mutations in CLCN5 are found in some patients with Dent's disease
+some,2,100%,MESH:D000081003,51119,1,15860664,SBDS exhibits no detectable full-length SBDS protein in some patients with SDS
+missens,2,100%,MESH:C538212,1184,1,27889724,p.Leu729X is one of the missense or nonsense mutations in CLCN5 found in Dent Disease
+missens,2,100%,MESH:D000081003,51119,1,15860664,R169C is a missense mutation associated with Shwachman-Diamond syndrome
+manifest,2,100%,MESH:C538212,1184,1,19546591,523delVal contributes to clinical manifestations of Dent's disease
+manifest,2,100%,MESH:D000081003,51119,1,17400792,183TA-->CT results in skeletal manifestations in Shwachman-Diamond syndrome
+between,2,100%,MESH:C538212,1184,1,15125028,insertion between nucleotides 590 contributes to Dent's disease pathology
+between,2,100%,MESH:D000081003,51119,1,25991726,loss of interaction between SBDS and EFL1 is associated with Shwachman-Diamond syndrome
+nucleotid,2,100%,MESH:C538212,1184,1,15125028,insertion between nucleotides 590 contributes to Dent's disease pathology
+nucleotid,2,100%,MESH:D000081003,51119,1,23831625,SBDS acts as a nucleotide exchange factor in the context of Shwachman-Diamond syndrome
+genet,2,100%,MESH:C538212,1184,1,21859490,S244L is involved in the genetic analysis related to Dent's disease
+genet,2,100%,MESH:D000081003,51119,1,25269020,c.258 + 2 T   C is part of the genetic mutation in Shwachman-Bodian-Diamond syndrome
+basi,2,100%,MESH:C538212,1184,1,9931332,studies of CLC-5 help elucidate the patho-physiological basis of Dent's disease
+basi,2,100%,MESH:D000081003,51119,1,14749921,292-295delAAAG contributes to the genetic basis of Shwachman-Diamond syndrome
+part,2,100%,MESH:C538212,1184,1,27889724,p.Gly57Arg is part of the genetic findings in Dent Disease patients
+part,2,100%,MESH:D000081003,51119,1,25269020,c.258 + 2 T   C is part of the SBDS gene mutation
+analysi,2,100%,MESH:C538212,1184,1,20804101,S244L was identified in the mutation analysis for Dent's disease
+analysi,2,100%,MESH:D000081003,51119,1,17106217,SBDS is involved in the genetic analysis of Shwachman-Diamond syndrome
+japanes,2,100%,MESH:C538212,1184,1,9853249,L278F is one of the mutations identified in Japanese children with Dent's disease
+japanes,2,100%,MESH:D000081003,51119,1,15942154,258+2 T > C is prevalent among Japanese patients with Shwachman-Diamond syndrome
+insuffici,2,100%,MESH:C538212,1184,1,15524062,CLCN5 is associated with renal insufficiency in Japanese Dent's disease
+insuffici,2,100%,MESH:D000081003,51119,1,36162759,SBDS is linked to exocrine pancreatic insufficiency in Shwachman-Diamond syndrome
+may,2,100%,MESH:C538212,1184,1,15524062,I524K may impact calcium metabolism in Dent's disease
+may,2,100%,MESH:D000081003,51119,1,17046571,p.R175W may contribute to severe disease in SDS patients
+impact,2,100%,MESH:C538212,1184,1,20654030,S244L may impact the severity of Dent's disease symptoms
+impact,2,100%,MESH:D000081003,51119,1,21803848,SBDS impacts ribosomal subunit joining in SDS patient lymphoblasts
+metabol,2,100%,MESH:C538212,1184,1,15814539,CLCN5 implicates hypokalaemic metabolic alkalosis in Dent's disease
+metabol,2,100%,MESH:D000081003,51119,1,27127007,SBDS is linked to defective lipid metabolism in Shwachman-Diamond syndrome
+progress,2,100%,MESH:C538212,1184,1,21932010,Y567X is linked to progression to renal failure in Dent disease patients
+progress,2,100%,MESH:D000081003,51119,1,30938873,SBDS is involved in SDS progression
+increas,2,100%,MESH:C538212,1184,1,27625851,p.P416fsX(*)17 increases the spectrum of CLCN5 mutations related to Dent's disease
+increas,2,100%,MESH:D000081003,51119,1,35453634,K62X increases the risk of Shwachman-Diamond Syndrome
+understand,2,100%,MESH:C538212,1184,1,27117801,CLCN5 functional analysis helps understand Dent disease
+understand,2,100%,MESH:D000081003,51119,1,14749921,184TA>CT contributes to the genetic understanding of Shwachman-Diamond syndrome
+expand,2,100%,MESH:C538212,1184,1,36646056,c.805-2A>G expands the spectrum of CLCN5 mutations related to Dent's disease
+expand,2,100%,MESH:D000081003,51119,1,17400792,SBDS mutations expand the phenotypic spectrum of Shwachman-Diamond syndrome
+diagnos,2,100%,MESH:C538212,1184,1,27889724,p.Leu729X was found in patients diagnosed with Dent Disease
+diagnos,2,100%,MESH:D000081003,51119,1,34925993,SBDS plays a role in diagnosing Shwachman-Diamond syndrome
+present,2,100%,MESH:C538212,1184,1,19076289,R637X contributes to the phenotypic presentation of Dent's disease
+present,2,100%,MESH:D000081003,51119,1,19148133,c.258+2T>C is present in compound heterozygotes for SBDS mutations in Shwachman syndrome
+asymptomat,2,100%,MESH:C538212,1184,1,15719255,Patients with R637X presented with asymptomatic proteinuria in Dent's disease
+asymptomat,2,100%,MESH:D000081003,51119,1,34704233,I167M is associated with asymptomatic Shwachman-Diamond syndrome
+two,2,100%,MESH:C538212,1184,1,15719255,R637X was found in two patients with Dent's disease
+two,2,100%,MESH:D000081003,51119,1,24330988,c.183_184TA > CT was identified in two cases of Shwachman-Diamond syndrome
+children,2,100%,MESH:C538212,1184,1,9596078,Mutations in CLCN5 are reported in Japanese children with LMWP showing Dent's disease symptoms
+children,2,100%,MESH:D000081003,51119,1,32434641,c.184A>T was detected in children with Shwachman-Diamond syndrome
+context,2,100%,MESH:C538212,1184,1,25001568,CLCN5 has genetic variability in the context of Dent disease
+context,2,100%,MESH:D000081003,51119,1,23831625,SBDS acts as a nucleotide exchange factor in the context of Shwachman-Diamond syndrome
+test,2,100%,MESH:C538212,1184,1,15895257,G462 V was tested for functional evaluation related to Dent's disease
+test,2,100%,MESH:D000081003,51119,1,33607811,258 +2T>C was identified during genetic testing for Shwachman-Diamond syndrome
+normal,2,100%,MESH:C538212,1184,1,15942052,R704X impairs normal endocytosis in Dent's disease
+normal,2,100%,MESH:D000081003,51119,1,17046571,SBDS is important for normal function in Shwachman-Diamond syndrome
+lack,2,100%,MESH:C538212,1184,1,15942052,S520P contributes to the lack of normal endocytosis in Dent's disease
+lack,2,100%,MESH:D000081003,51119,1,15769891,SBDS gene has a lack of genotype-phenotype relationship in Shwachman-Diamond syndrome
+major,2,100%,MESH:C538212,1184,1,15942052,defective targeting of ClC-5 is a major determinant in lack of normal endocytosis in Dent's disease
+major,2,100%,MESH:D000081003,51119,1,35322185,c.183_184TA > CT was identified in the majority of patients with Shwachman Diamond Syndrome
+chromosom,2,100%,MESH:C538212,1184,1,16041495,CLCN5 is located in the X chromosome related to Dent's disease
+chromosom,2,100%,MESH:D000081003,51119,1,16007594,SBDS is located on chromosome 7 in Shwachman-Diamond syndrome
+preval,2,100%,MESH:C538212,1184,1,16247550,IVS11-67 C > T is related to the prevalence of Dent's disease in patients
+preval,2,100%,MESH:D000081003,51119,1,15942154,258+2 T > C is prevalent among Japanese patients with Shwachman-Diamond syndrome
+indic,2,100%,MESH:C538212,1184,1,16247550,IVS11-67 C > T may indicate a mutation related to Dent's disease
+indic,2,100%,MESH:D000081003,51119,1,15342903,K62X indicates a genetic anomaly related to Shwachman-Diamond syndrome
+heterogen,2,100%,MESH:C538212,1184,1,16822791,W58fsX97 contributes to the genetic heterogeneity of Dent's disease
+heterogen,2,100%,MESH:D000081003,51119,1,15284109,SBDS is characterized by genetic heterogeneity in Shwachman-Diamond syndrome
+screen,2,100%,MESH:C538212,1184,1,16822791,CLCN5 was screened in patients with Dent's disease
+screen,2,100%,MESH:D000081003,51119,1,17376717,c.258+2T>C was detected during routine molecular screening for Shwachman-Diamond syndrome
+diagnosi,2,100%,MESH:C538212,1184,1,32231453,c.328_330delT has been linked to the diagnosis of Type 1 Dent disease
+diagnosi,2,100%,MESH:D000081003,51119,1,24426364,mutation 184TA-CT was revealed in the diagnosis of Shwachman-Diamond syndrome
+splice,2,100%,MESH:C538212,1184,1,16822791,IVS3 +2 G>C is linked to alternative splicing in Dent's disease
+splice,2,100%,MESH:D000081003,51119,1,26866830,c.258+2T>C causes aberrant splicing in Shwachman-Diamond syndrome
+connect,2,100%,MESH:C538212,1184,1,17982249,CLCN5 gene analysis detected mutation in connection to Dent's disease
+connect,2,100%,MESH:D000081003,51119,1,16047374,SBDS is a gene connected to Shwachman-Diamond syndrome
+boy,2,100%,MESH:C538212,1184,1,19076289,CLCN5 gene mutations were found in three Chinese boys with Dent's disease
+boy,2,100%,MESH:D000081003,51119,1,17400792,258+2T-->C was found in a British boy with Shwachman-Diamond syndrome
+show,2,100%,MESH:C538212,1184,1,18025833,CLCN5 shows loss-of-function phenotype in Dent's disease patients
+show,2,100%,MESH:D000081003,51119,1,32412173,258+2T>C shows a variant allele frequency of around 0.85 in Shwachman-Diamond syndrome cases
+from,2,100%,MESH:C538212,1184,1,7915957,XLRH is different from Dent disease
+from,2,100%,MESH:D000081003,51119,1,25870433,SBDS-deficient cells are derived from Shwachman-Diamond syndrome patients
+dure,2,100%,MESH:C538212,1184,1,27889724,p.Leu729X was discovered during genetic testing for Dent Disease
+dure,2,100%,MESH:D000081003,51119,1,33607811,258 +2T>C was identified during genetic testing for Shwachman-Diamond syndrome
+defici,2,100%,MESH:C538212,1184,1,18322545,CLCN5 deficiency leads to proximal tubule dysfunction in Dent's disease
+defici,2,100%,MESH:D000081003,51119,1,26479198,SBDS is deficient in the inherited leukemia-predisposition disorder Shwachman-Diamond syndrome
+reveal,2,100%,MESH:C538212,1184,1,20654030,S244L was revealed in children with Dent's disease
+reveal,2,100%,MESH:D000081003,51119,1,24426364,184TA-CT reveals Shwachman-Diamond syndrome
+about,2,100%,MESH:C538212,1184,1,19546586,mutations in CLCN5 are found in about 60% of Dent's disease patients
+about,2,100%,MESH:D000081003,51119,1,35893049,SBDS has been found in about 90% of patients with Shwachman-Diamond Syndrome
+factor,2,100%,MESH:C538212,1184,1,19546591,nt930delTCinsA contributes to the genetic factors of Dent's disease
+factor,2,100%,MESH:D000081003,51119,1,23831625,SBDS acts as a nucleotide exchange factor in the context of Shwachman-Diamond syndrome
+exchang,2,100%,MESH:C538212,1184,1,27699523,p.Ala540Pro occurs in the chloride-proton exchanger gene CLCN5 associated with Dent disease
+exchang,2,100%,MESH:D000081003,51119,1,25991726,mutations in SBDS prevent nucleotide exchange regulation on EFL1 in Shwachman-Diamond syndrome
+known,2,100%,MESH:C538212,1184,1,19657328,L469P is a known mutation in Dent's disease
+known,2,100%,MESH:D000081003,51119,1,25870433,SBDS is the only gene known to be causative of the pathology in Shwachman-Diamond syndrome
+distinct,2,100%,MESH:C538212,1184,1,26389017,patients with CLCN5 mutations exhibit distinct symptoms of Dent disease
+distinct,2,100%,MESH:D000081003,51119,1,26743985,SBDS plays a distinct role beyond protein translation in Shwachman-Diamond Syndrome
+pathogen,2,100%,MESH:C538212,1184,1,27625851,p.[H107P is one of the novel pathogenic mutations in Dent's disease
+pathogen,2,100%,MESH:D000081003,51119,1,36035165,SBDS has pathogenic variants in Shwachman-Diamond syndrome
+and/or,2,100%,MESH:C538212,1184,1,19806368,p.R648X contributes to focal segmental and/or global glomerulosclerosis in Dent's disease
+and/or,2,100%,MESH:D000081003,51119,1,19148133,SBDS mutations increase risk of myelodysplastic syndrome and/or acute myeloid leukaemia (MDS/AML) in SDS
+recurr,2,100%,MESH:C538212,1184,1,19806368,p.R648X is a recurrent mutation in Dent's disease
+recurr,2,100%,MESH:D000081003,51119,1,17400792,183TA-->CT is a recurrent mutation in Shwachman-Diamond syndrome
+causal,2,100%,MESH:C538212,1184,1,19806368,p.R648X is identified as a causal mutation for Dent's disease
+causal,2,100%,MESH:D000081003,51119,1,33115644,SBDS is the causal gene for Shwachman-Diamond syndrome
+interact,2,100%,MESH:C538212,1184,1,19940036,CLC-5 interacts with KIF3B in the context of Dent's disease
+interact,2,100%,MESH:D000081003,51119,1,25991726,SBDS loss of interaction with EFL1 contributes to Shwachman-Diamond syndrome
+due,2,100%,MESH:C538212,1184,1,19940036,CLC-5 is due to mutations in Dent's disease
+due,2,100%,MESH:D000081003,51119,1,14749921,+201A>G occurs due to gene conversion in Shwachman-Diamond syndrome
+analyz,2,100%,MESH:C538212,1184,1,9734595,leucine for serine at codon 244 was analyzed in research on Dent's disease
+analyz,2,100%,MESH:D000081003,51119,1,36162759,c.258+2T>C is analyzed in molecular diagnosis of Shwachman-Diamond syndrome
+damag,2,100%,MESH:C538212,1184,1,20804101,S244L is linked to progressive renal damage in Dent's disease
+damag,2,100%,MESH:D000081003,51119,1,30938873,loss of SBDS leads to mitochondria damage in SDS
+mother,2,100%,MESH:C538212,1184,1,20804101,S244L was found in the mother of the patient with Dent's disease
+mother,2,100%,MESH:D000081003,51119,1,24898207,c.98A > C was inherited from the mother of the child with SDS
+diagnost,2,100%,MESH:C538212,1184,1,21822997,CLCN5 fulfills diagnostic criteria for Dent disease
+diagnost,2,100%,MESH:D000081003,51119,1,32412173,201A>G contributes to diagnostic discrepancies in Shwachman-Diamond syndrome
+occur,2,100%,MESH:C538212,1184,1,27699523,p.Ala540Pro occurs in an extended family with Dent disease
+occur,2,100%,MESH:D000081003,51119,1,24330988,c.183_184TA > CT occurs in patients with Shwachman-Diamond syndrome
+syndrom,2,100%,MESH:C538212,1184,1,21955393,S244L causes a genetic defect in Dent's syndrome
+syndrom,2,100%,MESH:D000081003,51119,1,32434641,SBDS is associated with Shwachman-Diamond syndrome
+underli,2,100%,MESH:C538212,1184,1,22083641,CLCN5 mutations underlie the physiopathology of Dent's disease
+underli,2,100%,MESH:D000081003,51119,1,21536731,SBDS may underlie Shwachman-Diamond syndrome
+import,2,100%,MESH:C538212,1184,1,22083641,CLCN5 plays an important role in Dent's disease
+import,2,100%,MESH:D000081003,51119,1,17046571,SBDS is important for normal function in Shwachman-Diamond syndrome
+mous,2,100%,MESH:C538212,1184,1,23723021,Mouse models with ClC-5 disruption exhibit Dent's disease
+mous,2,100%,MESH:D000081003,51119,1,28056084,R126T is a mouse model for Shwachman-Diamond Syndrome (SDS)
+delet,2,100%,MESH:C538212,1184,1,9893114,single base deletion at codon 116 is a mutation that has been reported in hypercalciuric nephrolithiasis
+delet,2,100%,MESH:D000081003,51119,1,17376717,c.258+374_459+250del results in an internally deleted polypeptide relevant to Shwachman-Diamond syndrome
++2t,2,100%,MESH:C538212,1184,1,25124980,"IVS6, +2T>C is associated with Dent's disease"
++2t,2,100%,MESH:D000081003,51119,1,33607811,258 +2T>C was identified during genetic testing for Shwachman-Diamond syndrome
+previous,2,100%,MESH:C538212,1184,1,36688186,p.(Ser270Arg) was not previously reported in populational databases related to Dent's disease
+previous,2,100%,MESH:D000081003,51119,1,17478638,SBDS mutation is previously identified in SDS patients
+case,2,100%,MESH:C538212,1184,1,25124980,"IVS6, +2T>C has not been reported previously in Dent's disease cases"
+case,2,100%,MESH:D000081003,51119,1,15342903,183-184TA-->CT is identified in cases of Shwachman-Diamond syndrome
+confirm,2,100%,MESH:C538212,1184,1,32231453,c.328_330delT has been confirmed by mutation analysis for Type 1 Dent disease
+confirm,2,100%,MESH:D000081003,51119,1,26866830,c.41A>G was detected in a patient with clinically and molecularly confirmed Shwachman-Diamond syndrome
+reduc,2,100%,MESH:C538212,1184,1,26042048,ClC-5 exhibits reduced ion currents in Dent's disease mutations
+reduc,2,100%,MESH:D000081003,51119,1,34948128,SBDS expression is reduced in osteoBlasts from Shwachman-Diamond syndrome patients
+observ,2,100%,MESH:C538212,1184,1,26370164,CLCN5 mutations are observed in hemizygous patients with Dent's disease
+observ,2,100%,MESH:D000081003,51119,1,15769891,SBDS mutations were observed in the majority of Shwachman-Diamond syndrome cases
+approxim,2,100%,MESH:C538212,1184,1,26389017,CLCN5 mutations are present in approximately 25% of Dent disease patients
+approxim,2,100%,MESH:D000081003,51119,1,17454774,SBDS is mutated in approximately 90% of patients with Shwachman-Diamond syndrome
+complic,2,100%,MESH:C538212,1184,1,26389017,patients with CLCN5 mutations exhibit different clinical complications in Dent disease
+complic,2,100%,MESH:D000081003,51119,1,34758064,SBDS mutations lead to hematologic complications in Shwachman-Diamond syndrome
+it,2,100%,MESH:C538212,1184,1,27117801,CLCN5 is studied for its role in Dent disease
+it,2,100%,MESH:D000081003,51119,1,16007594,SBDS is studied for its role in AML in Shwachman-Diamond syndrome
+possibl,2,100%,MESH:C538212,1184,1,27625851,V108fs is possibly pathogenic for Dent's disease
+possibl,2,100%,MESH:D000081003,51119,1,32434641,c.637_638delGA was rated as possibly pathogenic in Shwachman-Diamond syndrome
+find,2,100%,MESH:C538212,1184,1,27889724,p.Gly57Arg is part of the genetic findings in Dent Disease patients
+find,2,100%,MESH:D000081003,51119,1,18280855,SBDS genotype correlates with pancreatic MRI findings in Shwachman-Diamond syndrome
+variat,2,100%,MESH:C538212,1184,1,9893114,single base deletion at codon 116 is linked to phenotypic variations in hypercalciuric nephrolithiasis
+variat,2,100%,MESH:D000081003,51119,1,15942154,183-184 TA > CT causes clinical variations in Shwachman-Diamond syndrome
+demonstr,2,100%,MESH:C538212,1184,1,36674829,p.(R34Efs*14) demonstrates the genetic basis of Tubulopathy Dent Disease
+demonstr,2,100%,MESH:D000081003,51119,1,28056084,R126T demonstrates characteristics of SDS
+cdna,2,100%,MESH:C538212,1184,1,8626585,ClC-5 has almost identical sequence to a partial sequence of human cDNA related to Dent's disease
+cdna,2,100%,MESH:D000081003,51119,1,23115272,Introduction of a wild-type SBDS cDNA corrected the ribosomal association defect in SDS patient cells
+base,2,100%,MESH:C538212,1184,1,9893114,single base deletion at codon 116 was identified in families with hypercalciuric nephrolithiasis
+base,2,100%,MESH:D000081003,51119,1,35322185,SBDS may vary based on genotype in Shwachman Diamond Syndrome
+includ,2,100%,MESH:C538212,1184,1,9596078,CLCN5 gene is involved in hypercalciuric nephrolithiasis including Dent's disease
+includ,2,100%,MESH:D000081003,51119,1,33115644,SBDS is linked to ribosomopathies including Shwachman-Diamond syndrome
+defin,2,100%,MESH:C538212,1184,1,9690036,CLC-5 is defined in hypercalciuric nephrolithiasis disorders of Dent's disease
+defin,2,100%,MESH:D000081003,51119,1,15284109,SBDS mutations define subgroups of Shwachman-Diamond syndrome patients

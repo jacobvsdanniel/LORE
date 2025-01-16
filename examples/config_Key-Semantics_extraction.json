@@ -1,0 +1,9 @@
+{
+    "task": "Key-Semantics_extraction",
+    "ore_knowledge_graph_file": "examples/LLM-ORE_knowledge_graph_gpt-4o-mini.csv",
+    "ranker_entity_label_file": "examples/ML-Ranker/entity_label.csv",
+    "semantics_lemma_file": "examples/Key-Semantics_lemma.jsonl",
+    "semantics_candidate_file": "examples/Key-Semantics_candidate.csv",
+    "semantics_min_DGs": 2,
+    "semantics_min_gold_DG_relations": 0.5
+}
