@@ -195,7 +195,7 @@ Option B - PMKB-CV taxonomy
 # The ./PMKB-CV/key_semantics_taxonomy/taxonomy will be used in the next step
 ```
 
-- Step 3: tagging
+- Step 3: Tagging
 
 For option A - your own list
 ```
