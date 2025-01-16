@@ -183,7 +183,7 @@ python LORE.py --config_file examples/config_Key-Semantics_extraction.json
 
 - Step 2: Curation
 
-Option A - your own list
+Option A - Your own list
 ```
 # Inspect the <semantics_candidate_file> created in step 1
 # Create your curated list of key semantics, see ./examples/Key-Semantics_semantics.csv
@@ -197,7 +197,7 @@ Option B - PMKB-CV taxonomy
 
 - Step 3: Tagging
 
-For option A - your own list
+For option A - Your own list
 ```
 python LORE.py --config_file examples/config_Key-Semantics_tagging_list.json
 ```
