@@ -189,7 +189,7 @@ Option A - Your own list
 # Create your curated list of key semantics, see ./examples/Key-Semantics_semantics.csv
 ```
 
-Option B - PMKB-CV taxonomy
+Option B - The PMKB-CV taxonomy
 ```
 # Download the LORE PMKB-CV (https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
 # The ./PMKB-CV/key_semantics_taxonomy/taxonomy will be used in the next step
@@ -202,7 +202,7 @@ For option A - Your own list
 python LORE.py --config_file examples/config_Key-Semantics_tagging_list.json
 ```
 
-For option B - PMKB-CV taxonomy
+For option B - The PMKB-CV taxonomy
 ```
 python LORE.py --config_file examples/config_Key-Semantics_tagging_taxonomy.json
 ```
