@@ -52,7 +52,7 @@ We have run LORE on all **4M PubMed article abstracts** that have Disease-Gene o
   - Features, training annotations, pretrained models are also provided
 
 - Curated key semantics taxonomy
-  - A manually curated taxonomy of important semantics about DG pathogenicity in the knowledge graph
+  - A manually curated taxonomy of **105 semantic tags** about DG pathogenicity in the knowledge graph
   - Use the github LORE Key-Semantics module to use the taxonomy as tags and add them to the knowledge graph
 
 The dataset is publicly available:
