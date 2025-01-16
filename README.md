@@ -17,7 +17,7 @@ Researchers:
 
 ## The LORE Literature Semantics Framework
 
-LORE consists of three core modules:
+LORE consists of four core modules:
 
 - **LLM-ORE**
   - Curates an entity-entity relations **Knowledge Graph** from literature articles using LLM-based open relation extraction
@@ -27,6 +27,9 @@ LORE consists of three core modules:
 
 - **ML-Ranker**
   - Builds an entity-entity **Association Score Predictor** using the embedding and sparse positive labels
+
+- **Key-Semantics**
+  - Annotates a controlled list of **Semantic Tags** and add to knowledge graph relations
 
 For more details, see our paper:
 
@@ -50,6 +53,7 @@ We have run LORE on all **4M PubMed article abstracts** that have Disease-Gene o
 
 - Curated key semantics taxonomy
   - A manually curated taxonomy of important semantics about DG pathogenicity in the knowledge graph
+  - Use the github LORE Key-Semantics module to use the taxonomy as tags and add them to the knowledge graph
 
 The dataset is publicly available:
 - Li, P.-H. (2025). LORE PMKB-CV [Data set]. Taiwan AI Labs. https://doi.org/10.5281/zenodo.14607639
@@ -164,3 +168,50 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_te
 # [DG label] 4,311 DGs: 3,175 unique Ds, 2,416 unique Gs
 # MAP=88.3% proportion_of_known_positive_DGs_predicted=94.8%
 ```
+
+### Key-Semantics
+
+- Step 1: Preprocess
+  
+  - Extracts lemmas for the input knowledge graph
+  - Creates a list of candidate high coverage, high precision lemmas to be used as relation tags
+  - Samples a set of relations for each candidate tags to aid manual inspection
+    
+```
+python LORE.py --config_file examples/config_Key-Semantics_extraction.json
+```
+
+- Step 2: Curation
+
+Option A - your own list
+```
+# Inspect the <semantics_candidate_file> created in step 1
+# Create your curated list of key semantics, see ./examples/Key-Semantics_semantics.csv
+```
+
+Option B - PMKB-CV taxonomy
+```
+# Download the LORE PMKB-CV (https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
+# The ./PMKB-CV/key_semantics_taxonomy/taxonomy will be used in the next step
+```
+
+- Step 3: tagging
+
+For option A - your own list
+```
+python LORE.py --config_file examples/config_Key-Semantics_tagging_list.json
+```
+
+For option B - PMKB-CV taxonomy
+```
+python LORE.py --config_file examples/config_Key-Semantics_tagging_taxonomy.json
+```
+
+See ./examples/Key-Semantics_knowledge_graph.csv for an example tagged knowledge graph.
+
+## Citation
+
+If this work is helpful, please kindly cite as:
+
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
+- Li, P.-H. (2025). LORE PMKB-CV [Data set]. Taiwan AI Labs. https://doi.org/10.5281/zenodo.14607639
