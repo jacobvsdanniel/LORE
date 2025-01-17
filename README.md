@@ -211,7 +211,7 @@ See ./examples/Key-Semantics_knowledge_graph.csv for an example tagged knowledge
 
 ## Citation
 
-If this work is helpful, please kindly cite as:
+If you use LORE in your work, please cite:
 
 - Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
 - Li, P.-H. (2025). LORE PMKB-CV [Data set]. Taiwan AI Labs. https://doi.org/10.5281/zenodo.14607639
