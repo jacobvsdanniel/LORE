@@ -209,7 +209,7 @@ python LORE.py --config_file examples/config_Key-Semantics_tagging_taxonomy.json
 
 See ./examples/Key-Semantics_knowledge_graph.csv for an example tagged knowledge graph.
 
-## Citation
+## Citing LORE
 
 If you use LORE in your work, please cite:
 
