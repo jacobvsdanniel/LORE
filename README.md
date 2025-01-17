@@ -29,7 +29,7 @@ LORE consists of four core modules:
   - Builds an entity-entity **Association Score Predictor** using the embedding and sparse positive labels
 
 - **Key-Semantics**
-  - Annotates a controlled list of **Semantic Tags** and add to knowledge graph relations
+  - Annotates a controlled list of **Semantic Tags** and adds to knowledge graph relations
 
 For more details, see our paper:
 
