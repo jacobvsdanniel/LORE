@@ -109,11 +109,11 @@ python LORE.py --config_file examples/config_LLM-EMB.json
 
 All the config, labels, and features (for 5k samples) in the following scenarios are included in ./examples/ML-Ranker
 
-This is enough for preparing your custom dataset with correct data formats and train your own models.
+This is enough to prepare your custom dataset with correct data formats and train custom models.
 
-However, to run the following scenarios and reproduce expected results, please download the [LORE PMKB-CV](https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
+However, to run the following scenarios and reproduce expected results, please download the [LORE PMKB-CV](https://doi.org/10.5281/zenodo.14607639) dataset and uncompress it to ./PMKB-CV
 
-- Scenario: k-fold cross validation
+- Scenario: k-fold cross-validation
 
   - Saves predicted association scores
   - Evaluates performance
@@ -128,7 +128,7 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_k-fold/config.json
 # MAP=81.3% proportion_of_known_positive_DGs_predicted=94.8%
 ```
 
-- Scenario: leave-one-out cross validation
+- Scenario: leave-one-out cross-validation
 
   - Saves predicted association scores
   - Evaluates performance
@@ -158,7 +158,7 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_tr
 - Scenario: testing a predictor
 
   - Saves predicted association scores
-  - (optional) Evaluates performance if label file is provided
+  - (optional) Evaluates performance if the label file is provided
 
 ```
 python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_test.json
@@ -175,7 +175,7 @@ python LORE.py --config_file PMKB-CV/2025/ML-Ranker/setting_train-test/config_te
   
   - Extracts lemmas for the input knowledge graph
   - Creates a list of candidate high coverage, high precision lemmas to be used as relation tags
-  - Samples a set of relations for each candidate tags to aid manual inspection
+  - Samples a set of relations for each candidate tag to aid manual inspection
     
 ```
 python LORE.py --config_file examples/config_Key-Semantics_extraction.json
@@ -183,21 +183,21 @@ python LORE.py --config_file examples/config_Key-Semantics_extraction.json
 
 - Step 2: Curation
 
-Option A - Your own list
+Option A - Your custom list
 ```
 # Inspect the <semantics_candidate_file> created in step 1
-# Create your curated list of key semantics, see ./examples/Key-Semantics_semantics.csv
+# Create your curated list of key semantics. See ./examples/Key-Semantics_semantics.csv
 ```
 
 Option B - The PMKB-CV taxonomy
 ```
-# Download the LORE PMKB-CV (https://doi.org/10.5281/zenodo.14607639) dataset and uncompress to ./PMKB-CV
+# Download the LORE PMKB-CV (https://doi.org/10.5281/zenodo.14607639) dataset and uncompress it to ./PMKB-CV
 # The ./PMKB-CV/key_semantics_taxonomy/taxonomy will be used in the next step
 ```
 
 - Step 3: Tagging
 
-For option A - Your own list
+For option A - Your custom list
 ```
 python LORE.py --config_file examples/config_Key-Semantics_tagging_list.json
 ```
@@ -207,7 +207,7 @@ For option B - The PMKB-CV taxonomy
 python LORE.py --config_file examples/config_Key-Semantics_tagging_taxonomy.json
 ```
 
-See ./examples/Key-Semantics_knowledge_graph.csv for an example tagged knowledge graph.
+See ./examples/Key-Semantics_knowledge_graph.csv for an example knowledge graph with tagged relations.
 
 ## Citing LORE
 
