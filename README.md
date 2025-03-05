@@ -1,6 +1,6 @@
 # LORE
 
-**[A Literature Semantics Framework with LLMs](https://doi.org/10.1101/2024.08.10.24311801) to build knowledge graphs, embeddings, and association predictors**
+**[A Literature Semantics Framework with LLMs](https://doi.org/10.1093/bib/bbaf070) to build knowledge graphs, embeddings, and association predictors**
 
 **[The LORE PMKB-CV Dataset](https://doi.org/10.5281/zenodo.14607638) contains PubMed disease-gene knowledge graphs, embeddings, and predicted pathogenicity scores**
 
@@ -33,7 +33,8 @@ LORE consists of four core modules:
 
 For more details, see our paper:
 
-- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2025. [A large language model framework for literature-based disease–gene association prediction.](https://doi.org/10.1093/bib/bbaf070) _Briefings in Bioinformatics._
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801) _Preprint._
 
 ## The LORE PMKB-CV Dataset
 
@@ -213,5 +214,6 @@ See ./examples/Key-Semantics_knowledge_graph.csv for an example knowledge graph 
 
 If you use LORE in your work, please cite:
 
-- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801)
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2025. [A large language model framework for literature-based disease–gene association prediction.](https://doi.org/10.1093/bib/bbaf070) _Briefings in Bioinformatics._
+- Peng-Hsuan Li, Yih-Yun Sun, Hsueh-Fen Juan, Chien-Yu Chen, Huai-Kuang Tsai, and Jia-Hsin Huang. 2024. [LORE: A Literature Semantics Framework for Evidenced Disease-Gene Pathogenicity Prediction at Scale.](https://doi.org/10.1101/2024.08.10.24311801) _Preprint._
 - Li, P.-H. (2025). LORE PMKB-CV [Data set]. Taiwan AI Labs. https://doi.org/10.5281/zenodo.14607639
